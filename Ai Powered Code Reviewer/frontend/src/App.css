@@ -1,0 +1,104 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+
+html,body,#root{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+h2{
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  height: 100%;
+}
+.top{
+  margin-top: 0%;
+  display: flex;
+  padding-top: 0.4rem;
+  height: 5%;
+  /* border: 2px solid red; */
+  align-items: center;
+}
+
+.bottom{
+  height: 93%;
+  /* border: 2px solid pink; */
+}
+
+main{
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left,
+main .right{
+  height: 100%;
+  width: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+
+}
+
+main .left{
+  background-color: rgba(41, 40, 40, 0.911);
+  position: relative;
+}
+.code{
+  height: 100%;
+  border-radius: 0.7rem;
+  width: 100%;
+  margin: 0%;
+}
+
+main .left .review{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(115, 115, 199);
+  color: white;
+  padding-top: 0.3rem;
+  padding: 0.3rem 2rem;
+  transition: transform ease-in-out 0.2s;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  user-select: none;
+}
+main .left .review:hover{
+  transform: scale(1.05);
+  background-color: rgb(206, 206, 247);
+  color: black;
+
+}
+
+main .right{
+  background-color: rgb(85, 85, 85);
+  color: white;
+  padding: 1rem 1rem 1rem 2rem;
+  overflow: auto;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main .right ::-webkit-scrollbar{
+  display: none;
+}
